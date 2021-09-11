@@ -1,0 +1,407 @@
+/* Start Global */
+.navbar, 
+.header, 
+.services, 
+.our-team, 
+.testim, 
+.our-projects, 
+.footer{
+  min-width:1100px;
+} 
+.container {
+  width:1100px;
+  margin:auto;
+}
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box; 
+   box-sizing:border-box;
+}
+ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+/* End Global */
+
+/* Start My Framework */
+.clearfix{
+  clear:both;
+}
+/* Start My Framework */
+/* Start Navbar */
+
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.navbar .brand {
+    float: left;
+    width: 60%;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Aldrich';
+}
+
+.navbar .links {
+    float: left;
+    width: 40%;
+    margin-top: 25px
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+      
+   
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    border-bottom: 2px solid #03A9F4;
+    color:#03A9F4;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+    background:url('https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+    position: relative;
+    background-size:100%;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0 ,0 , 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1
+}
+
+.header .bx-wrapper {
+    height: 100%
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {
+    height: 100%
+}
+
+.header .bxslider li {
+    display: block
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bxslider li h2 span {
+    color: #03A9F4;
+}
+
+/* End Header */
+
+/* Start Services */
+.services{
+  padding-top:50px;
+}
+.special-heading{
+  position:relative;
+}
+.special-heading:after{
+  content:"";
+  display:block;
+  position:absolute;
+  top:120%;
+  left:0;
+  width:40px;
+  border:2px solid #03A9F4;
+}
+.services .item{
+  float:left;
+  width:33.33333333%;
+    margin-top:30px;
+}
+.services .item i{
+  color:#03A9F4;
+  float:left;
+  margin-right:5%;
+  width:20%;
+}
+.services .item .info{
+  float:left;
+  width:75%;
+}
+.services .item .info h3{
+  color:#585353;
+}
+.services .item .info p{
+  color:#888;
+}
+.container hr{
+  margin:40px 0 ;
+  border:1px solid rgba(136, 136, 136, 0.2);
+}
+/* End Services */
+
+/* Start Our Team */
+.our-team{
+  
+}
+.our-team .box{
+  float:left;
+  overflow:hidden;
+  padding-bottom:40px;
+}
+.our-team .box img{
+  width:250px;
+  height:170px;
+}
+.our-team .box:first-child{
+  width:35%;
+  margin-right:2%;
+  transition:all 2S easy;
+}
+
+.our-team .box:first-child p{
+  color:#888;
+}
+.our-team .box:not(:first-child){
+  width:19%;
+  text-align:right;
+  height:170px;;
+  margin-left:2%;
+  position:relative;
+}
+.our-team .box:not(:first-child) .overlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  line-height:170px;
+  color:#fff;
+  font-weight:bold;
+  text-transform:uppercase;
+  display:none;
+  background:rgba(0, 170, 244, 0.79);
+}
+.our-team .box:not(:first-child):hover .overlay{
+  display:block;
+}
+/* End Our Team */
+
+/* Start Testimonials */
+.testim{
+  overflow:hidden;
+  height:330px;
+  width:100%;
+  background-size:100%;
+  background-position:70% 70%;
+  position:relative;
+  background:url('https://images.pexels.com/photos/159825/color-pencil-drawing-coloring-colored-pencils-159825.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+}
+.testim .t-overlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-color:rgba(0, 0, 0, 0.84);
+}
+.testim h2{
+  color:#fff;
+  padding-top:40px;
+  padding-bottom:20px;
+  font-size:2em;
+  font-family: 'Aldrich';
+}
+.testim q{
+  color:#fff;
+  line-height:1.6em;
+  font-size:1.4em;
+  font-family: 'Allan';
+}
+.testim p{
+  color:#03A9F9;
+  font-weight:bold;
+  font-size:1.6em;
+  letter-spacing: 3px;
+  font-family: 'Leckerli One';
+}
+.testim .slider >div{
+  display:none;
+}
+.testim .slider .active{
+  display:block;
+}
+/* End Testimonials */
+
+/* start Our Projects */
+.our-projects{
+  padding:50px 0;
+}
+.our-projects ul{
+  margin-top:50px;
+}
+.our-projects ul li{
+  display:inline-block;
+  border:1px solid #aaa;
+  padding:10px;
+  border-radius:5px;
+  color:#aaa;
+  margin-right:5px;
+}
+.our-projects .selected{
+  background-color:#03A9F4;
+  color:#fff;
+  border:1px solid #03A9F4;
+}
+.our-projects .gallary{
+  margin-top:50px;
+  overflow:hidden;
+}
+.our-projects .gallary .row > div{
+  width:32.666666%;
+  float:left;
+  margin-bottom:10px;
+  position:relative;
+  height:220px;
+}
+.our-projects .gallary .row >div img{
+  width:100%;
+  height:220px;
+}
+.our-projects .gallary .row >div:nth-child(2){
+  margin:0 1%;
+}
+.our-projects .gallary .row >div .over{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background:rgba(3, 169, 244, 0.6);
+  line-height:220px;
+  color:#fff;
+  font-wieght:bold;
+  display:none;
+}
+.our-projects .gallary .row >div:hover .over,
+.our-projects .gallary .row >div:hover .heart
+{
+  display:block;
+}
+.our-projects .gallary .row >div .heart{
+  position:absolute;
+  bottom:20px;
+  right:20px;
+  color:#fff;
+  display:none
+}
+.our-projects .mix{
+  display: none;
+}
+.our-projects .shuffle li{
+  cursor: pointer;
+}
+/* End Our Projects */
+
+/* Start Footer */
+.footer{
+  background-color:#232323;
+  color:#6C6C6C;
+  padding:40px 0;
+}
+.footer .col{
+  width:25%;
+  float:left;
+}
+.footer .col h2{
+  color:#fff;
+  font-weight:normal;
+  font-size:18px;
+  margin:14px 0;
+}
+.footer .col p{
+  margin-bottom:30px;
+  line-height:1.6em;
+}
+.footer .col i{
+  display:inline-block;
+  color:#fff;
+  padding:10px;
+  border:1px solid #979797;
+  width:45px;
+}
+.footer .copyright{
+  margin-top:30px;
+}
+.footer .tags span{
+  display:inline-block;
+  padding:10px;
+  margin-right:5px;
+  margin-bottom:5px;
+  border:1px solid #979797;
+}
+.footer .recent img{
+  float:left;
+  margin-right:10px;
+  width:70px;
+  height:60px;
+}
+.footer .recent h4{
+  font-weight:normal;
+  color:#fff;
+}
+.footer .recent p{
+  
+}
+.footer .blog ul li{
+  padding:15px;
+  border-bottom:1px solid #fff;
+  color:#ccc;
+}
+ 
+/* End Footer */
